@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,30 +13,58 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TessGit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Git" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzf-Ol-Rg2">
-                                <rect key="frame" x="149.5" y="429.5" width="115" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dA-VP-lLb">
+                                <rect key="frame" x="94" y="158" width="240" height="240"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenshot_fb" translatesAutoresizingMaskIntoConstraints="NO" id="V5X-0s-bEw">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo_fb" translatesAutoresizingMaskIntoConstraints="NO" id="CIk-dA-3Ky">
+                                <rect key="frame" x="158" y="94" width="102" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="AYi-Qs-NVJ"/>
+                                    <constraint firstAttribute="width" constant="75" id="yhD-d9-4GW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pLd-Xa-V0H">
+                                <rect key="frame" x="0.0" y="44" width="428" height="262"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="262" id="pEA-6r-nSb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Jzf-Ol-Rg2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X6L-hd-a5F"/>
-                            <constraint firstItem="Jzf-Ol-Rg2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bP0-16-oXb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V5X-0s-bEw" secondAttribute="trailing" id="1ej-md-LX8"/>
+                            <constraint firstItem="pLd-Xa-V0H" firstAttribute="top" secondItem="V5X-0s-bEw" secondAttribute="top" id="6sC-tj-Ryx"/>
+                            <constraint firstItem="2dA-VP-lLb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="114" id="Aae-Y5-8dp"/>
+                            <constraint firstItem="V5X-0s-bEw" firstAttribute="centerX" secondItem="2dA-VP-lLb" secondAttribute="centerX" id="Fhd-jS-pgW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2dA-VP-lLb" secondAttribute="bottom" constant="494" id="XDB-Bc-4Zu"/>
+                            <constraint firstItem="V5X-0s-bEw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cR4-p0-HqD"/>
+                            <constraint firstItem="V5X-0s-bEw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="dNi-Wc-0ko"/>
+                            <constraint firstItem="V5X-0s-bEw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i1o-jc-q3f"/>
+                            <constraint firstItem="2dA-VP-lLb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="i2V-EB-lzF"/>
+                            <constraint firstItem="CIk-dA-3Ky" firstAttribute="centerX" secondItem="pLd-Xa-V0H" secondAttribute="centerX" id="jhb-4v-C1l"/>
+                            <constraint firstItem="CIk-dA-3Ky" firstAttribute="centerY" secondItem="pLd-Xa-V0H" secondAttribute="centerY" constant="12" id="ndD-DJ-fha"/>
+                            <constraint firstItem="pLd-Xa-V0H" firstAttribute="leading" secondItem="V5X-0s-bEw" secondAttribute="leading" id="rbo-Kd-gq6"/>
+                            <constraint firstItem="pLd-Xa-V0H" firstAttribute="trailing" secondItem="V5X-0s-bEw" secondAttribute="trailing" id="y8g-ql-Pm0"/>
+                            <constraint firstItem="V5X-0s-bEw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zKb-Wa-D1s"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="98"/>
+            <point key="canvasLocation" x="18.22429906542056" y="97.192224622030238"/>
         </scene>
     </scenes>
     <resources>
+        <image name="logo_fb" width="196" height="196"/>
+        <image name="screenshot_fb" width="1125" height="2436"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
